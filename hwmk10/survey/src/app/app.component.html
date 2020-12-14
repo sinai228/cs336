@@ -1,0 +1,12 @@
+<app-survey-card question="What is your mood today?" minValue=1 maxValue=100 (result)="gotResult($event)">
+</app-survey-card>
+<app-survey-card question="How many hours do you spend a week coding?" minValue=1 maxValue=30 units="hours"
+  (result)="gotResult($event)">
+</app-survey-card>
+<app-survey-card question="How hungry are you?" minValue=1 maxValue=10 (result)="gotResult($event)"></app-survey-card>
+<app-survey-card question="If you were to marry, at what age do you want to marry?" minValue=20 maxValue=40 units="age"
+  (result)="gotResult($event)">
+</app-survey-card>
+<p id="results">Results of Values: </p>
+
+{{result | json}}

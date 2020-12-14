@@ -1,0 +1,77 @@
+/* Name: Sinai Park
+User ID: sp46
+Date: 10/13/2020
+CS336 @ Calvin University  */
+
+* {
+  border: 0px solid blue;
+}
+
+.card {
+  display:  grid;
+  align-content: space-between;
+  width: min-content;
+  white-space:nowrap;
+  padding: 5px;
+  gap: 3%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "logo-div title "
+    "logo-div subtitle "
+    "logo-div ..."
+    "logo-div button ";
+}
+
+.logo-div {
+  grid-area: logo-div;
+}
+
+img {
+  width: 20vw;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 3px rgb(65, 62, 62);
+
+}
+.title {
+  grid-area: title;
+  padding: 5px 20px;
+  color: black;
+  font-size: 4vw;
+  font:  Lucida, monospace;
+}
+.subtitle {
+  grid-area: subtitle;
+  padding: 0px 20px;
+  color: gray;
+  font-size: 2vw;
+  font: Lucida, monospace;
+}
+
+button {
+  grid-area: button;
+  background-color:cornflowerblue;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  margin: 4px 5px;
+  text-align: center;
+  font-size: 1.1vw;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 2px gray;
+
+
+}
+
+
+/* Grading Rubric: 10 pts
+
+Basic layout of components correct: 3 pts
+Good spacing between 3 vertically oriented right items: 2 pts
+Good spacing horizontally: 1 pt
+Shadowing correct: 1 pt
+Colors are correct: 1 pt
+Responsive: fonts change size, picture changes size: 2 pts
+Submit to /home/cs/336/current/<yourid>/hmwk7/. */

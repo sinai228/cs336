@@ -1,0 +1,30 @@
+<!-- Name: Sinai Park
+User ID: sp46
+Date: 10/29/2020
+CS336 @ Calvin University  -->
+
+<div class="outerCard">
+  <h1 class="titleCard">Guess the √Square Roots Game</h1>
+  <div class="innerMargin">
+    <label for="root_label">Guess the √sqrt of </label>
+    <input type="text" [(ngModel)]="rootnumber" value={{rootnumber}}>
+
+    <label for="within_label "> within </label>
+    <input type="text" [(ngModel)]="percent">
+    <label> % </label><br>
+    <button type="button" (click)="randnum()">Pick a random number</button>
+    <hr class="divider"><br>
+
+    <div *ngIf="showMe">
+      <label for="guess_label"> Enter your guess: </label>
+      <input type="text" [(ngModel)]='myguess' (keyup.enter)="submit()"><br>
+    </div>
+
+    <h5 *ngFor="let feedback of feedbacks; let i = index">
+      {{feedback}}
+    </h5>
+
+    <br><button *ngIf="!showMe" (click)="clear()">Try Again?</button>
+
+  </div>
+</div>

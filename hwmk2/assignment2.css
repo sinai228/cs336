@@ -1,0 +1,80 @@
+/* Name: Sinai Park
+User ID: sp46
+Date: 9/22/2020
+CS336 @ Calvin University */
+
+/*.header is flexed*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.header div portion shrinks/grows*/
+.header div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40px;
+}
+
+/*.calvin-logo sets the img at center at 250px width and 90px in height*/
+.calvin-logo {
+  margin-left: 130px;
+  display: block;
+  object-fit: cover;
+  width: 250px;
+  height: 90px;
+}
+
+/*this stylizes the search bar input and aligns it in the middle, and on the right of the logo*/
+.search-bar input[type=text] {
+  justify-content: flex-end;
+  border: none;
+  right: 50px;
+  width: 130px;
+  background-color: #C8C8C8;
+  box-shadow: inset 0 0 3px gray;
+  border-radius: 5px;
+}
+
+/*this makes the unordered list get rid of bullet points and create a navigation bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #800000;
+
+}
+
+/*this styles the navigation bar's font, font style, and font size, which changes according to window*/
+.nav-bar {
+  text-transform: uppercase;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+  letter-spacing: -1px;
+}
+
+/*this style each menu's font color, align, and gets rid of the underline href link */
+.nav-bar a{
+  float: left;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  width: 16.66%;
+  text-decoration: none;
+}
+/*this allows the background of the nav bar menu to change into a darker maroon color when mouse is hovering over it*/
+.nav-bar a:hover {
+  background-color: #5A0000;
+}
+
+/*this styles the text underneath the navigation bar to be aligned in the center, with a big font size*/
+p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}

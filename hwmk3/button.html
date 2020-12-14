@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Name: Sinai Park
+User ID: sp46
+Date: 9/26/2020
+CS336 @ Calvin University-->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment Hint Toggle: Week 4</title>
+  <style>
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      border: 2px solid #ddd;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Click the button to toggle between hiding and showing the DIV element:</p>
+
+  <!-- button that shows/hides the hint -->
+  <button id="mybtn" onclick="myFunction()">Click to see Hint</button>
+
+  <div id="myDIV">
+    <img src="https://www.iconfinder.com/data/icons/sibcode-line-tech/512/light_on-512.png" alt="hint icon"
+      style="width:100px; height:100px;" class="center">
+    This is the hint that will be shown or hidden depending on whether you click the button!
+  </div>
+
+  <p><b>Note:</b> The element will not take up any space when the display property set to "none". <br><br>
+  <h5>Assignment for Week 4</h5>
+  </p>
+
+  <script>
+
+    // function that is called when button is clicked
+    function myFunction() {
+      //initializes elements by id
+      var x = document.getElementById("myDIV");
+      var btntext = document.getElementById("mybtn");
+      //when display is shown,
+      if (x.style.display === "block") {
+        //buttons text changes,hides the hint
+        x.style.display = "none";
+        btntext.innerHTML = "Click to see Hint";
+      } else {
+        //buttons text changes, shows the hint
+        x.style.display = "block";
+        btntext.innerHTML = "Click to close Hint";
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>

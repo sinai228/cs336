@@ -1,0 +1,67 @@
+// Name: Sinai Park
+// User ID: sp46
+// Date: 10/29/2020
+// CS336 @ Calvin University
+//styles the app.component.html
+
+
+* {
+  border: 0px solid blue;
+
+}
+.outerCard {
+  display: block;
+  align-content: space-between;
+  width: min-content;
+  white-space:nowrap;
+  padding: 25px;
+  margin: 10px;
+  background-color: lavender;
+  border-radius: 10px;
+}
+
+.titleCard {
+  color: black;
+  font-size: 30px;
+  padding: 10px;
+  font-family:  Lucida, monospace;
+  background-color: lightsteelblue;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgb(65, 62, 62);
+}
+  label {
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  input {
+      box-shadow: 1px 1px 1px 1px rgb(65, 62, 62);
+      height: 25px;
+      border-radius: 10px;
+      font-size: 10px;
+  }
+
+  .innerMargin {
+    margin: 30px 0 30px 10px;
+  }
+
+  h5 {
+    color: black;
+  }
+   button {
+      background-color: lightslategray;
+      border-radius: 30px;
+      padding: 10px;
+      margin: 20px 0px;
+      color: white;
+      border-style: outset;
+      cursor: pointer;
+   }
+  .divider {
+    border-top: 4px solid slategray;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .feedback{
+  white-space: pre-wrap
+ }
+

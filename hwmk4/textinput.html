@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Name: Sinai Park
+User ID: sp46
+Date: 9/26/2020
+CS336 @ Calvin University-->
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Assignment: Dynamically Parse Text Input (Week 4)
+  </title>
+</head>
+
+<body>
+  <h1>Please type input into the text box below</h1>
+
+  <textarea id="textbox" onkeyup="this.value=this.value.toUpperCase()"
+    style="width: 500px; height: 150px; border: 2px inset #DEB887"></textarea>
+  <p id="wordcount">0 words</p>
+  <p id="charcount">0 characters</p>
+
+
+  <script src="textinput.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- Grading Rubric:
+
+15 points total:
+3 pts: HTML and JavaScript are perfectly indented, JavaScript has some comments, and good identifier names have been used.
+2 pts: All lowercase characters are converted to uppercase.
+8 pts: Proper plurals are used in the various cases ("0 words", "1 word", "2 words", etc.)
+2 pts: no if statements are used: only ternary operators.  -->

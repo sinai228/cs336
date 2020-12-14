@@ -1,0 +1,36 @@
+// Name: Sinai Park
+// User ID: sp46
+// Date: 10 / 5 / 2020
+// CS336 @Calvin University
+
+
+function addDataRows() {
+  //log that resuts print when button is licked
+  const data_array = new DataService();
+  const row_data = data_array.getData();
+  console.log(row_data);
+
+  //DOM element with id "rows"
+  const row_id = document.getElementById("rows");
+
+  row_data.forEach( (element) => {
+    createRow(row_id, element);
+  });
+
+}
+/**function createRow
+  *
+  *passes in the DOM element with id "rows" and single obj of data
+  *create row and insert it into the table
+ */
+function createRow(parentElem, rowData) {
+
+  const row = parentElem.insertRow(0);
+  tr = parentElem.insertRow(parentElem.rows.length);
+  const cell1 = tr.insertCell(0).innerHTML = rowData.name;
+  const cell2 = tr.insertCell(1).innerHTML = rowData.gender;
+  const cell3 = tr.insertCell(2).innerHTML = rowData.address
+  const cell4 = tr.insertCell(3).innerHTML = rowData.age;
+  const cell5 = tr.insertCell(4).innerHTML = rowData.phoneNumber;
+  const cell6 = tr.insertCell(5).innerHTML = "";
+}
