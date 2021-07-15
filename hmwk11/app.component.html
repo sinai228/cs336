@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="sticktop">
+    <span class="title">
+      <p>Chat App</p>
+      <mat-icon class="chat_icon">chat</mat-icon><br />
+    </span>
+    <label>Enter your name: <input type="text" [(ngModel)]="username" /></label>
+    <br />
+    <label for="colorinput">Pick a color: </label>
+    <mat-icon class="colorize_icon"> colorize </mat-icon>
+    <span
+      class="color_text"
+      [style.color]="color"
+      [cpPosition]="'bottom'"
+      [cpPositionOffset]="'50%'"
+      [cpPositionRelativeToArrow]="true"
+      [(colorPicker)]="color"
+      [cpCancelButton]="true"
+      [cpOutputFormat]="'rgba'"
+      [cpPresetColors]="['#fff', '#ae96b6ff', '#916a5fff', '#79c0b7ff']"
+      [cpAddColorButton]="true"
+      (colorPickerChange)="(color)"
+      >click here!</span
+    >
+    <br />
+  </div>
+  <div class="messagebox" *ngFor="let item of items">
+    <span class="message" [style.color]="item.color">
+      {{ item.username }} :
+      {{ item.message }}
+    </span>
+    <span class="timestamp">
+      {{ item.timestamp.toDate() | date: "medium" }}
+    </span>
+  </div>
+  <div class="bottom">
+    <label class="enter_message"
+      >Enter a message:
+      <input
+        type="text"
+        style="width: 300px"
+        (keyup.enter)="send_message()"
+        [(ngModel)]="message"
+    /></label>
+  </div>
+</div>

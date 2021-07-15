@@ -1,0 +1,83 @@
+* {
+  border: 0px solid blue;
+}
+.container {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  font-family: Lucida, monospace;
+  background-color: #d4bebe;
+  border-radius: 20px;
+  position: relative;
+  border: 3px outset rgb(248, 207, 207);
+}
+.sticktop {
+  position: sticky;
+  top: 0;
+  background-color: #c4adad;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px outset rgb(248, 207, 207);
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+input {
+  box-shadow: 1px 1px 1px 1px rgb(65, 62, 62);
+  height: 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  max-height: fit-content;
+}
+.chat_icon {
+  padding: 10px;
+}
+.colorize_icon {
+  padding: 3px;
+  margin: 10px;
+  font-size: 22px;
+}
+.color_text {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px #ffffff;
+}
+.color_text {
+  cursor: pointer;
+}
+label {
+  font-size: 10px;
+}
+.enter_message {
+  font-size: 15px;
+}
+.messagebox {
+  border: 2px solid #dfdfdf;
+  background-color: #f0f0f0c2;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  min-width: inline-block;
+  max-width: max-content;
+  border: 1px outset rgb(248, 207, 207);
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+.message {
+  display: inline-block;
+}
+.timestamp {
+  font-size: 7px;
+  color: gray;
+}
+.bottom {
+  position: sticky;
+  bottom: 0;
+  background-color: #b6a4a4;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px outset rgba(189, 156, 156, 0.562);
+  overflow: scroll;
+}
